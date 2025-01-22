@@ -23,7 +23,7 @@
             background-size: cover;
             color: #fff;
             width: 100%;
-            height: 500px;
+            height: 300px;
         }
 
         .logo-bar {
@@ -32,28 +32,47 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 20px 0;
+            padding: 15px 0;
         }
 
         .icon {
             display: block;
-            width: 100px;
-            height: 100px;
+            width: 80px;
+            height: 80px;
         }
 
         .content {
-            padding: 20px;
+            padding: 10px 20px;
         }
 
         .description {
-            font-size: 1.2rem;
+            font-size: 1rem;
             color: #333;
         }
 
         .footer {
             margin-top: 20px;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             color: #777;
+        }
+
+        @media (min-width: 768px) {
+            .banner {
+                height: 500px;
+            }
+
+            .icon {
+                width: 100px;
+                height: 100px;
+            }
+
+            .description {
+                font-size: 1.2rem;
+            }
+
+            .footer {
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
