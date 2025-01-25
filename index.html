@@ -50,16 +50,20 @@
             color: #333;
         }
 
+        /* CA text styling */
+        .ca-text {
+            font-size: 1rem;
+            color: #333;
+        }
+
         /* Social links styling */
         .social-links {
             margin-top: 20px;
         }
-
         .social-links a {
             margin: 0 10px;
             text-decoration: none;
         }
-
         .social-icon {
             width: 32px;
             height: 32px;
@@ -87,6 +91,13 @@
                 font-size: 0.9rem;
             }
         }
+
+        /* Reduce CA text size on mobile devices */
+        @media (max-width: 767px) {
+            .ca-text {
+                font-size: 0.9rem; /* Slightly reduced on smaller screens */
+            }
+        }
     </style>
 </head>
 <body>
@@ -101,7 +112,9 @@
             Introducing <strong>$SOFTBANK</strong>: The Solana token blending government precision with crypto innovation.<br>
             Secure and DOGE-powered for a modern financial future.
         </p>
-        <p>ca G9EbUSQAq2YNEQpvU9iXK2WbHuSc9gqYSzm6sZQ8pump</p>
+
+        <!-- Slightly reduced font size for mobile -->
+        <p class="ca-text">ca G9EbUSQAq2YNEQpvU9iXK2WbHuSc9gqYSzm6sZQ8pump</p>
 
         <!-- Social Links -->
         <div class="social-links">
